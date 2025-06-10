@@ -2,7 +2,11 @@
 
 **Geo Calc Toolkit** provides APIs for calculating **distance, length, and area** of various geospatial objects.
 
+[//]: # (**geo calc toolkit**은 다양한 공간 객체에 대한 **거리, 길이, 면적 계산 기능**을 제공하는 API입니다.)
+
 These APIs can be applied to a wide range of business and technical scenarios involving geospatial data, such as **location-based services (LBS), map visualization, route analysis, and geofencing**.
+
+[//]: # (위치 기반 서비스\(LBS\), 지도 시각화, 경로 분석, 지오펜싱 등 **공간 데이터를 다루는 다양한 비즈니스와 기술 환경**에 적용할 수 있습니다.)
 
 ---
 
