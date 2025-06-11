@@ -21,8 +21,8 @@ These APIs can be applied to a wide range of business and technical scenarios in
 **📏 Length Calculation**
 
 - [Total length of a polyline](./detail/total-length-of-a-polyline.md)
-- [Total boundary length of a polygon](./detail/total-boundary-length-of-a-polygon.md)
-- [Total circumference of a circular area](./detail/total-circumference-of-a-circular-area.md)
+- [Total boundary length of the polygonal area](./detail/total-boundary-length-of-the-polygonal-area)
+- [Total boundary length of the circular area](./detail/total-boundary-length-of-the-circular-area)
 
 **🟩 Area Calculation**
 
