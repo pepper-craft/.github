@@ -1,6 +1,6 @@
 ### 📄 Distance between two coordinates API
 
-![distance-between-two-coordinates-01](./img/distance-between-two-coordinates-01.png)
+![distance-between-two-coordinates](./img/distance-between-two-coordinates.png)
 
 This API calculates and returns the shortest distance between two geographic coordinates (latitude and longitude) on the
 Earth's surface.

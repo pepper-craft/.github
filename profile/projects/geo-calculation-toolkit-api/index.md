@@ -4,7 +4,8 @@
 
 [//]: # (**geo calc toolkit**은 다양한 공간 객체에 대한 **거리, 길이, 면적 계산 기능**을 제공하는 API입니다.)
 
-These APIs can be applied to a wide range of business and technical scenarios involving geospatial data, such as **location-based services (LBS), map visualization, route analysis, and geofencing**.
+These APIs can be applied to a wide range of business and technical scenarios involving geospatial data, such as
+**location-based services (LBS), map visualization, route analysis, and geofencing**.
 
 [//]: # (위치 기반 서비스\(LBS\), 지도 시각화, 경로 분석, 지오펜싱 등 **공간 데이터를 다루는 다양한 비즈니스와 기술 환경**에 적용할 수 있습니다.)
 
@@ -21,12 +22,12 @@ These APIs can be applied to a wide range of business and technical scenarios in
 **📏 Length Calculation**
 
 - [Total length of a polyline](./detail/total-length-of-a-polyline.md)
-- [Total boundary length of the polygonal area](./detail/total-boundary-length-of-the-polygonal-area)
-- [Total boundary length of the circular area](./detail/total-boundary-length-of-the-circular-area)
+- [Total boundary length of the polygonal area](./detail/total-boundary-length-of-the-polygonal-area.md)
+- [Total boundary length of the circular area](./detail/total-boundary-length-of-the-circular-area.md)
 
 **🟩 Area Calculation**
 
-- [Area of a polygon](./detail/area-of-a-polygon.md)
+- [Area of a polygonal region](./detail/area-of-a-polygonal-region.md)
 - [Area of a circular region](./detail/area-of-a-circular-region.md)
 
 **📍 Coordinates Calculation**
@@ -36,19 +37,19 @@ These APIs can be applied to a wide range of business and technical scenarios in
 - [Destination coordinate after moving a certain distance toward another coordinate](./detail/destination-coordinate-after-moving-a-certain-distance-toward-another-coordinate.md)
 - [Destination coordinate after moving a certain distance in a given bearing](./detail/destination-coordinate-after-moving-a-certain-distance-in-a-given-bearing.md)
 
-**🧭 Bearing Calculation**
+  **📦 Containment Check**
 
-- [Bearing from one coordinate to another](./detail/bearing-from-one-coordinate-to-another.md)
-
-**📦 Containment Check**
-
-- [Check if a coordinate is inside a polygon](./detail/check-if-a-coordinate-is-inside-a-polygon.md)
-- [Check if a coordinate is inside a circular region](./detail/check-if-a-coordinate-is-inside-a-circular-region.md)
+- [Coordinate containment in a polygonal area](./detail/coordinate-containment-in-a-polygonal-area.md)
+- [Coordinate containment in a circular area](./detail/coordinate-containment-in-a-circular-area.md)
 
 **💥 Intersection Check**
 
-- [Check if two circular areas intersect](./detail/check-if-two-circular-areas-intersect.md)
-- [Check if two polygon areas intersect](./detail/check-if-two-polygon-areas-intersect.md)
-- [Check if two polylines intersect](./detail/check-if-two-polylines-intersect.md)
-- [Check if a polyline intersects with a polygon](./detail/check-if-a-polyline-intersects-with-a-polygon.md)
-- [Check if a polyline intersects with a circular area](./detail/check-if-a-polyline-intersects-with-a-circular-area.md)
+- [Intersection between two circular areas](./detail/intersection-between-two-circular-areas.md)
+- [Intersection between two polygonal areas](./detail/intersection-between-two-polygonal-areas.md)
+- [Intersection between two polylines](./detail/intersection-between-two-polylines.md)
+- [Intersection between a polyline and a polygonal area](./detail/intersection-between-a-polyline-and-a-polygonal-area.md)
+- [Intersection between a polyline and a circular area](./detail/intersection-between-a-polyline-and-a-circular-area.md)
+
+**🧭 Bearing Calculation**
+
+- [Bearing between coordinates](./detail/bearing-between-coordinates.md)
