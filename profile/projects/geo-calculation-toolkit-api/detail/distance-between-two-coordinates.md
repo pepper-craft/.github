@@ -19,8 +19,8 @@ coordinates.
 
 1. [🧭 Overview](#-1-overview)
 2. [📤 Request Details](#-2-request-details)
-   1. [Request Example](#21-request-example)
-   2. [Request Specifications](#22-request-specifications)
+    1. [Request Example](#21-request-example)
+    2. [Request Specifications](#22-request-specifications)
 3. [📥 Response Details](#-3-response-details)
     1. [Response Example](#31-response-example)
     2. [Response Specifications](#32-response-specifications)
@@ -62,13 +62,13 @@ Content-Type: application/json
 
 ### 2.2 Request Specifications
 
-#### Base Endpoint Info
+#### 2.2.1. Base Endpoint Info
 
 | **API Provider Platform** | **Method** | **Base URL(HTTP Protocol + Host)** | **Path**                        |
 |:-------------------------:|:----------:|------------------------------------|:--------------------------------|
 |         Rapid API         |    POST    | `https://yourapi.p.rapidapi.com`   | `/distance/between-coordinates` |
 
-#### Request Headers
+#### 2.2.2. Request Headers
 
 | Header Name       | Type   | Required | Description                         |
 |-------------------|--------|----------|-------------------------------------|
@@ -76,13 +76,13 @@ Content-Type: application/json
 | `X-RapidAPI-Key`  | string | ✅        | Your API key issued by RapidAPI     |
 | `X-RapidAPI-Host` | string | ✅        | The API host identifier on RapidAPI |
 
-#### Query Parameters
+#### 2.2.3. Query Parameters
 
 | Parameter | Type   | Required   | Description                                                   |
 |-----------|--------|------------|---------------------------------------------------------------|
 | `unit`    | string | ❌ Optional | Distance unit (`mm`, `m`, `km`, `ft`, `mi`) — defaults to `m` |
 
-#### Request Body
+#### 2.2.4. Request Body
 
 | Field                | Type   | Required | Description                        |
 |----------------------|--------|----------|------------------------------------|
@@ -112,13 +112,6 @@ Content-Type: application/json
 | `data`          | object  | ❌        | Included only when `success` is `true`             |
 | `data.distance` | number  | ❌        | Distance between coordinates (4 decimal precision) |
 | `data.unit`     | string  | ❌        | Unit of measurement (e.g. `m`, `km`, `mi`)         |
-
-| Field           | Type    | Description                                                |
-|-----------------|---------|------------------------------------------------------------|
-| `success`       | boolean | Indicates whether the operation succeeded                  |
-| `data`          | object  | Contains the result of the calculation                     |
-| `data.distance` | number  | Distance between coordinates (precision: 4 decimal places) |
-| `data.unit`     | string  | Unit of measurement used in the response                   |
 
 ---
 
