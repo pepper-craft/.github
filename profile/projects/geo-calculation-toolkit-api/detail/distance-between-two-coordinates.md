@@ -12,16 +12,15 @@
 
 ## 📚 목차
 
-1. [Overview](#1.-Overview)
-2. [Request Details](#-요청-스펙)
-    1. Request Example
-    2. Request Specifications
-3. [Response Details](#-응답-스펙)
-    1. Response Example
-    2. Response Specifications
-4. [Error Response Examples](#-실패-응답-예시)
-5. [Reference Links](#-참고-링크)
-
+1. [🧭 Overview](#-1-overview)
+2. [📤 Request Details](#-2-request-details)
+   1. [Request Example](#-21-request-example)
+   2.[Request Specifications](#-22-request-spec)
+3. [📥 Response Details](#-3-response-details)
+   1. [Response Example](#-31-response-example)
+   2. [Response Specifications](#-32-response-specifications)
+4. [💥 Error Response Examples](#-4-error-response-examples)
+5. [🔗 Reference Links](#-5-reference-links)
 
 ## 🧭 1. Overview
 
@@ -59,13 +58,11 @@ Content-Type: application/json
 
 ### 2.2 Request Spec
 
-#### **Base Endpoint Info**
-
-**Base Endpoint Info**
+#### Base Endpoint Info
 
 | **API Provider Platform** | **Method** | **Base URL(HTTP Protocol + Host)** | **Path**                      |
 |:-------------------------:|:----------:|------------------------------------|:------------------------------|
-|         Rapid API         |    POST    | https://yourapi.p.rapidapi.com     | /distance/between-coordinates |
+|         Rapid API         |    POST    | `https://yourapi.p.rapidapi.com`   | /distance/between-coordinates |
 
 #### Request Headers
 
