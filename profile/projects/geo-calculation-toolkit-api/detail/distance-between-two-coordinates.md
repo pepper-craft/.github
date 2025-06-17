@@ -81,13 +81,13 @@ Content-Type: application/json
 
 ### 2.2 Request Specifications
 
-#### 2.2.1. Base Endpoint Info
+**2.2.1. Base Endpoint Info**
 
 | **API Provider Platform** | **Method** | **Base URL(HTTP Protocol + Host)** | **Path**                        |
 |:-------------------------:|:----------:|------------------------------------|:--------------------------------|
 |         Rapid API         |    POST    | `https://yourapi.p.rapidapi.com`   | `/distance/between-coordinates` |
 
-#### 2.2.2. Request Headers
+**2.2.2. Request Headers**
 
 | Header Name       | Type   | Required | Description                         |
 |-------------------|--------|----------|-------------------------------------|
@@ -95,13 +95,13 @@ Content-Type: application/json
 | `X-RapidAPI-Key`  | string | ✅        | Your API key issued by RapidAPI     |
 | `X-RapidAPI-Host` | string | ✅        | The API host identifier on RapidAPI |
 
-#### 2.2.3. Query Parameters
+**2.2.3. Query Parameters**
 
 | Parameter | Type   | Required   | Description                                                   |
 |-----------|--------|------------|---------------------------------------------------------------|
 | `unit`    | string | ❌ Optional | Distance unit (`mm`, `m`, `km`, `ft`, `mi`) — defaults to `m` |
 
-#### 2.2.4. Request Body
+**2.2.4. Request Body**
 
 | Field                | Type   | Required | Description                        |
 |----------------------|--------|----------|------------------------------------|
@@ -126,8 +126,6 @@ Content-Type: application/json
   "unit": "m"
 }
 ```
-
-<br>
 
 ### 3.2 Response Specifications
 
