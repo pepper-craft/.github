@@ -1,4 +1,4 @@
-### Introducing the Geo Calc Toolkit API
+## Introducing the Geo Calc Toolkit API
 
 **Geo Calc Toolkit** provides APIs for calculating **distance, length, and area** of various geospatial objects.
 
