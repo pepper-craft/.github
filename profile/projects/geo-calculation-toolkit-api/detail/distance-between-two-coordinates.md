@@ -61,8 +61,7 @@ The default unit for the returned distance is meters, with options to calculate 
 ### 2.1 Request Example
 
 ```http request
-# Distance Between Two Coordinates API reqeust example
-POST {{host}}/distance/between-coordinates?unit=mm
+POST {{Base URL}}/distance/between-coordinates?unit=mm
 Content-Type: application/json
 
 {
