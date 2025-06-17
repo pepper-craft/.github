@@ -35,9 +35,12 @@ coordinates.
 4. [💥 Error Response Examples](#-4-error-response-examples)
 5. [🔗 Reference Links](#-5-reference-links)
 
+<br>
+
+
 ---
 
-<br><br>
+<br>
 
 ## 🧭 1. Overview
 
@@ -47,11 +50,15 @@ This API calculates and returns the shortest distance between two geographic coo
 Earth's surface.
 The default unit for the returned distance is meters, with options to calculate in feet and miles as needed.
 
+<br>
+
 ---
 
-<br><br>
+<br>
 
 ## 📤 2. Request Details
+
+<br>
 
 ### 2.1 Request Example
 
@@ -71,6 +78,8 @@ Content-Type: application/json
   }
 }
 ```
+
+<br>
 
 ### 2.2 Request Specifications
 
@@ -103,7 +112,11 @@ Content-Type: application/json
 | `toCoordinate.lat`   | number | ✅        | Latitude of the destination point  |
 | `toCoordinate.lng`   | number | ✅        | Longitude of the destination point |
 
+<br>
+
 ---
+
+<br>
 
 ## 📥 3. Response Details
 
