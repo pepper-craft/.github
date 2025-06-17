@@ -19,11 +19,11 @@ coordinates.
 
 1. [🧭 Overview](#-1-overview)
 2. [📤 Request Details](#-2-request-details)
-    1. [Request Example](#-2-1-request-example)
-    2. [Request Specifications](#-2-2-request-spec)
+   1. [Request Example](#21-request-example)
+   2. [Request Specifications](#22-request-specifications)
 3. [📥 Response Details](#-3-response-details)
-    1. [Response Example](#-3-1-response-example)
-    2. [Response Specifications](#-3-2-response-specifications)
+    1. [Response Example](#31-response-example)
+    2. [Response Specifications](#32-response-specifications)
 4. [💥 Error Response Examples](#-4-error-response-examples)
 5. [🔗 Reference Links](#-5-reference-links)
 
@@ -60,7 +60,7 @@ Content-Type: application/json
 }
 ```
 
-### 2.2 Request Spec
+### 2.2 Request Specifications
 
 #### Base Endpoint Info
 
