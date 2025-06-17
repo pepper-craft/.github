@@ -77,8 +77,6 @@ Content-Type: application/json
 }
 ```
 
-<br>
-
 ### 2.2 Request Specifications
 
 **2.2.1. Base Endpoint Info**
