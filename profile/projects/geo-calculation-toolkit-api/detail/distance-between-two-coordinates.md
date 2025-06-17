@@ -140,9 +140,3 @@ Content-Type: application/json
 ---
 
 [Go to API List](../index.md)
-
-<style>
-markdown-accessibility-table {
-   overflow-x: auto;
-}
-</style>
