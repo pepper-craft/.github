@@ -3,9 +3,11 @@
 This is an HTTP API that calculates the straight-line distance between two points based on their latitude and longitude
 coordinates.
 
+<br>
+
 ---
 
-<br><br>
+<br>
 
 ## 👤 Recommended Reading Guide
 
@@ -15,9 +17,11 @@ coordinates.
 | ✅ Users starting integration development         | [📤 Request Details](#-2-request-details) | Learn the request and response formats to quickly integrate and test the API in your application. |
 | ✅ Users who want to test or use the API directly | [🔗 Reference Links](#-5-reference-links) | Test the API in the RapidAPI console and get your API key to start making live calls.             |
 
+<br>
+
 ---
 
-<br><br>
+<br>
 
 ## 📚 Table of Contents
 
