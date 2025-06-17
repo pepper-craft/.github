@@ -58,8 +58,6 @@ The default unit for the returned distance is meters, with options to calculate 
 
 ## 📤 2. Request Details
 
-<br>
-
 ### 2.1 Request Example
 
 ```http request
@@ -129,6 +127,8 @@ Content-Type: application/json
 }
 ```
 
+<br>
+
 ### 3.2 Response Specifications
 
 | Field           | Type    | Nullable | Description                                        |
@@ -138,7 +138,11 @@ Content-Type: application/json
 | `data.distance` | number  | ❌        | Distance between coordinates (4 decimal precision) |
 | `data.unit`     | string  | ❌        | Unit of measurement (e.g. `m`, `km`, `mi`)         |
 
+<br>
+
 ---
+
+<br>
 
 ## 💥 4. Error Response Examples
 
@@ -158,9 +162,15 @@ Content-Type: application/json
 | `error.code`    | number  | HTTP status code                    |
 | `error.message` | string  | Description of the error            |
 
+<br>
+
 ---
 
+<br>
+
 ## 🔗 5. Reference Links
+
+<br>
 
 ---
 
