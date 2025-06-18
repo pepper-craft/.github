@@ -3,27 +3,19 @@
 > This is an HTTP API that calculates the shortest distance over the Earth's surface (Great-circle distance) between two
 > points specified by latitude and longitude.
 
-## 👤 Recommended Reading Guide
-
-| Purpose of Use                                   | Start with                                | Description                                                                                       |
-|--------------------------------------------------|-------------------------------------------|---------------------------------------------------------------------------------------------------|
-| ✅ First-time user                                | [🧭 Overview](#-1-overview)               | Understand what the API does through a visual explanation. Start with the basic concepts.         |
-| ✅ Users starting integration development         | [📤 Request Details](#-2-request-details) | Learn the request and response formats to quickly integrate and test the API in your application. |
-| ✅ Users who want to test or use the API directly | [🔗 Reference Links](#-5-reference-links) | Test the API in the RapidAPI console and get your API key to start making live calls.             |
-
 ---
 
 ## 📚 Table of Contents
 
-1. [🧭 Overview](#-1-overview)
-2. [📤 Request Details](#-2-request-details)
+1. [🧭 Overview](#-1-overview) — *For first-time users*
+2. [📤 Request Details](#-2-request-details) — *For developers integrating the API*
     1. [Request Example](#21-request-example)
     2. [Request Specifications](#22-request-specifications)
 3. [📥 Response Details](#-3-response-details)
     1. [Response Example](#31-response-example)
     2. [Response Specifications](#32-response-specifications)
 4. [💥 Error Response Examples](#-4-error-response-examples)
-5. [🔗 Reference Links](#-5-reference-links)
+5. [🔗 Reference Links](#-5-reference-links) — *For testing the API and retrieving your API key*
 
 ---
 
@@ -84,12 +76,14 @@ Content-Type: application/json
 
 **2.2.4. Request Body**
 
-| Field                | Type   | Required | Description                        |
-|----------------------|--------|----------|------------------------------------|
-| `fromCoordinate.lat` | number | ✅ Yes    | Latitude of the starting point     |
-| `fromCoordinate.lng` | number | ✅ Yes    | Longitude of the starting point    |
-| `toCoordinate.lat`   | number | ✅ Yes    | Latitude of the destination point  |
-| `toCoordinate.lng`   | number | ✅ Yes    | Longitude of the destination point |
+| Field            | Type   | Required | Description                        |
+|------------------|--------|----------|------------------------------------|
+| `fromCoordinate` | object | ✅ Yes    | Starting point coordinates         |
+| └`lat`           | number | ✅ Yes    | Latitude of the starting point     |
+| └`lng`           | number | ✅ Yes    | Longitude of the starting point    |
+| `toCoordinate`   | object | ✅ Yes    | Destination point coordinates      |
+| └`lat`           | number | ✅ Yes    | Latitude of the destination point  |
+| └`lng`           | number | ✅ Yes    | Longitude of the destination point |
 
 ---
 
@@ -99,19 +93,22 @@ Content-Type: application/json
 
 ```json
 {
-  "distance": 47.1732,
-  "unit": "m"
+  "success": true,
+  "data": {
+    "distance": 31.4989,
+    "unit": "m"
+  }
 }
 ```
 
 ### 3.2 Response Specifications
 
-| Field           | Type    | Nullable | Description                                        |
-|-----------------|---------|----------|----------------------------------------------------|
-| `success`       | boolean | ❌ No     | Indicates whether the operation succeeded          |
-| `data`          | object  | ❌ No     | Included only when `success` is `true`             |
-| `data.distance` | number  | ❌ No     | Distance between coordinates (4 decimal precision) |
-| `data.unit`     | string  | ❌ No     | Unit of measurement (e.g. `m`, `km`, `mi`)         |
+| Field       | Type    | Nullable | Description                                        |
+|-------------|---------|----------|----------------------------------------------------|
+| `success`   | boolean | ❌ No     | Indicates whether the operation succeeded          |
+| `data`      | object  | ❌ No     | Included only when `success` is `true`             |
+| └`distance` | number  | ❌ No     | Distance between coordinates (4 decimal precision) |
+| └`unit`     | string  | ❌ No     | Unit of measurement (e.g. `m`, `km`, `mi`)         |
 
 ---
 
@@ -120,18 +117,18 @@ Content-Type: application/json
 ```json
 {
   "success": false,
-  "error": {
-    "code": 400,
-    "message": "Invalid input: 'lat' and 'lng' are required."
-  }
+  "code": "REQUIRED_PARAMETER_MISSING",
+  "message": "Required parameter is missing.",
+  "detailMessage": "Required parameter is missing. (fromCoordinate)"
 }
 ```
 
-| Field           | Type    | Description                         |
-|-----------------|---------|-------------------------------------|
-| `success`       | boolean | Always `false` when an error occurs |
-| `error.code`    | number  | HTTP status code                    |
-| `error.message` | string  | Description of the error            |
+| Field           | Type    | Nullable | Description                                                          |
+|-----------------|---------|----------|----------------------------------------------------------------------|
+| `success`       | boolean | ❌ No     | Indicates whether the operation was successful. Always `false` here. |
+| `code`          | string  | ❌ No     | Application-defined error code representing the type of failure.     |
+| `message`       | string  | ❌ No     | General explanation of the error.                                    |
+| `detailMessage` | string  | ❌ No     | Detailed context or location of the error, useful for debugging.     |
 
 ---
 
