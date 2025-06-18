@@ -14,7 +14,10 @@
 3. [📥 Response Details](#-3-response-details)
     1. [Response Example](#31-response-example)
     2. [Response Specifications](#32-response-specifications)
-4. [💥 Error Response Examples](#-4-error-response-examples)
+4. [💥 Error Response Details](#-4-error-response-details)
+    1. [Error Response Example](#41-error-response-example)
+    2. [Error Response Specifications](#42-error-response-specifications)
+    3. [Error Codes](#43-error-codes)
 5. [🔗 Reference Links](#-5-reference-links) — *For testing the API and retrieving your API key*
 
 ---
@@ -34,7 +37,7 @@ The API below takes two such coordinates as input and returns the **calculated s
 
 ## 📤 2. Request Details
 
-### 2.1 Request Example
+### 2.1. Request Example
 
 ```http request
 POST {{base-url}}/distance/between-coordinates?unit=mm
@@ -52,7 +55,7 @@ Content-Type: application/json
 }
 ```
 
-### 2.2 Request Specifications
+### 2.2. Request Specifications
 
 **2.2.1. Base Endpoint Info**
 
@@ -89,7 +92,7 @@ Content-Type: application/json
 
 ## 📥 3. Response Details
 
-### 3.1 Response Example
+### 3.1. Response Example
 
 ```json
 {
@@ -101,7 +104,7 @@ Content-Type: application/json
 }
 ```
 
-### 3.2 Response Specifications
+### 3.2. Response Specifications
 
 | Field       | Type    | Nullable | Description                                        |
 |-------------|---------|----------|----------------------------------------------------|
@@ -112,9 +115,14 @@ Content-Type: application/json
 
 ---
 
-## 💥 4. Error Response Examples
+## 💥 4. Error Response Details
 
-```json
+### 4.1. Error Response Example
+
+```http request
+400 Bad Request
+Content-Type: application/json
+
 {
   "success": false,
   "code": "REQUIRED_PARAMETER_MISSING",
@@ -123,12 +131,33 @@ Content-Type: application/json
 }
 ```
 
+### 4.2. Error Response Specifications
+
+**4.2.1. Error Response Headers**
+
+| Header Name    | Example Value      | Description                    |
+|----------------|--------------------|--------------------------------|
+| `Content-Type` | `application/json` | MIME type of the response body |
+
+**4.2.2. Error Response Body**
+
 | Field           | Type    | Nullable | Description                                                          |
 |-----------------|---------|----------|----------------------------------------------------------------------|
 | `success`       | boolean | ❌ No     | Indicates whether the operation was successful. Always `false` here. |
 | `code`          | string  | ❌ No     | Application-defined error code representing the type of failure.     |
 | `message`       | string  | ❌ No     | General explanation of the error.                                    |
 | `detailMessage` | string  | ❌ No     | Detailed context or location of the error, useful for debugging.     |
+
+### 4.3. Error Codes
+
+| HTTP Status | Error Code                   | Description                                      |
+|-------------|------------------------------|--------------------------------------------------|
+| 400         | `REQUIRED_PARAMETER_MISSING` | One or more required parameters are missing.     |
+| 400         | `INVALID_COORDINATE_FORMAT`  | Latitude or longitude format is invalid.         |
+| 401         | `UNAUTHORIZED`               | API key is missing or invalid.                   |
+| 403         | `FORBIDDEN`                  | The API key does not have access to this action. |
+| 429         | `RATE_LIMIT_EXCEEDED`        | Too many requests in a short period.             |
+| 500         | `INTERNAL_SERVER_ERROR`      | An unexpected server error occurred.             |
 
 ---
 
