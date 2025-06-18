@@ -30,14 +30,6 @@ These APIs can be applied to a wide range of business and technical scenarios in
 - [Area of a polygonal region](./detail/area-of-a-polygonal-region.md)
 - [Area of a circular region](./detail/area-of-a-circular-region.md)
 
-
-**ㅁㄴㅇㅁㄴㅇ**
-- [Closest point on a line from a coordinate](./detail/closest-point-on-a-line-from-a-coordinate.md)
-- [Closest point on a line from a coordinate](./detail/closest-point-on-a-line-from-a-coordinate.md)
-- [Closest point on a line from a coordinate](./detail/closest-point-on-a-line-from-a-coordinate.md)
-
-
-
 **📍 Coordinates Calculation**
 
 - [Closest point on a line from a coordinate](./detail/closest-point-on-a-line-from-a-coordinate.md)
@@ -45,7 +37,7 @@ These APIs can be applied to a wide range of business and technical scenarios in
 - [Destination coordinate after moving a certain distance toward another coordinate](./detail/destination-coordinate-after-moving-a-certain-distance-toward-another-coordinate.md)
 - [Destination coordinate after moving a certain distance in a given bearing](./detail/destination-coordinate-after-moving-a-certain-distance-in-a-given-bearing.md)
 
-  **📦 Containment Check**
+**📦 Containment Check**
 
 - [Coordinate containment in a polygonal area](./detail/coordinate-containment-in-a-polygonal-area.md)
 - [Coordinate containment in a circular area](./detail/coordinate-containment-in-a-circular-area.md)
