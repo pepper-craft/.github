@@ -1,9 +1,7 @@
 ## 📄 Distance between two coordinates API
 
-This is an HTTP API that calculates the straight-line distance between two points based on their latitude and longitude
-coordinates.
-
----
+> This is an HTTP API that calculates the shortest distance over the Earth's surface (Great-circle distance) between two
+> points specified by latitude and longitude.
 
 ## 👤 Recommended Reading Guide
 
