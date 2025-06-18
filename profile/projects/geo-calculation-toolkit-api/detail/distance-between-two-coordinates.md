@@ -163,6 +163,21 @@ Content-Type: application/json
 
 ## 🔗 5. Reference Links
 
+- [🚀 Try the API on RapidAPI Console](https://rapidapi.com/your-api/test)  
+  Run live requests and see actual responses from the API.
+
+- [🔑 Get Your API Key](https://rapidapi.com/account)  
+  Sign in and generate your personal API key to start integrating.
+
+- [💻 Sample Code on GitHub](https://github.com/your-org/your-api-samples)  
+  Browse ready-to-use examples in multiple programming languages.
+
+- [📈 View Pricing & Rate Limits](https://rapidapi.com/your-api/pricing)  
+  See available plans, quotas, and usage limits.
+
+- [💬 Contact Support](mailto:support@yourapi.com)  
+  Reach out if you have questions, issues, or need integration help.
+
 ---
 
 [Go to API List](../index.md)
