@@ -27,11 +27,11 @@ points specified by latitude and longitude.
 
 ![distance-between-two-coordinates](./img/distance-between-two-coordinates.png)
 
-This image is a **visual representation of the distance between two geographic coordinates**.
-Points **A** and **B** are defined by their **latitude** and **longitude**, forming geographic coordinates.
-While the image illustrates the distance as a **straight line on a flat surface** for simplicity,
-it actually represents the **shortest path over the Earth’s surface**, known as the **Great-circle distance**.
-The API below takes two such coordinates as input and returns the **calculated shortest distance on Earth**.
+This image is a visual representation of the distance between two geographic coordinates.
+Points A and B are defined by their latitude and longitude, forming geographic coordinates.
+While the image illustrates the distance as a straight line on a flat surface for simplicity,
+it actually represents the shortest path over the Earth’s surface, known as the Great-circle distance.
+The API below takes two such coordinates as input and returns the calculated shortest distance on Earth.
 
 
 ---
@@ -60,9 +60,9 @@ Content-Type: application/json
 
 **2.2.1. Base Endpoint Info**
 
-| **API Provider Platform** | **Method** | **Base URL(HTTP Protocol + Host)** | **Path**                        |
-|:-------------------------:|:----------:|------------------------------------|:--------------------------------|
-|         Rapid API         |    POST    | `https://yourapi.p.rapidapi.com`   | `/distance/between-coordinates` |
+| API Provider Platform | Method | Base URL(HTTP Protocol + Host)   | Path                            |
+|:---------------------:|:------:|----------------------------------|:--------------------------------|
+|       Rapid API       |  POST  | `https://yourapi.p.rapidapi.com` | `/distance/between-coordinates` |
 
 **2.2.2. Request Headers**
 
@@ -142,12 +142,12 @@ Content-Type: application/json
 
 **4.2.2. Error Response Body**
 
-| Field           | Type    | Nullable | Description                                                          |
-|-----------------|---------|----------|----------------------------------------------------------------------|
-| `success`       | boolean | ❌ No     | Indicates whether the operation was successful. Always `false` here. |
-| `code`          | string  | ❌ No     | Application-defined error code representing the type of failure.     |
-| `message`       | string  | ❌ No     | General explanation of the error.                                    |
-| `detailMessage` | string  | ❌ No     | Detailed context or location of the error, useful for debugging.     |
+| Field           | Type    | Nullable | Description                                                                       |
+|-----------------|---------|----------|-----------------------------------------------------------------------------------|
+| `success`       | boolean | ❌ No     | Indicates whether the operation was successful. Always `false` here.              |
+| `code`          | string  | ❌ No     | Application-defined error code representing the type of failure.                  |
+| `message`       | string  | ❌ No     | General explanation of the error.                                                 |
+| `detailMessage` | string  | ❌ No     | 	Additional information providing context about the error for debugging purposes. |
 
 ### 4.3. Error Codes
 
@@ -160,19 +160,11 @@ To view the full list of error codes, please visit the link below.
 ## 🔗 5. Reference Links
 
 - [🚀 Try the API on RapidAPI Console](https://rapidapi.com/your-api/test)  
-  Run live requests and see actual responses from the API.
+  Run live requests, view sample code, pricing, and manage your API key—all in one place.
 
-- [🔑 Get Your API Key](https://rapidapi.com/account)  
-  Sign in and generate your personal API key to start integrating.
-
-- [💻 Sample Code on GitHub](https://github.com/your-org/your-api-samples)  
-  Browse ready-to-use examples in multiple programming languages.
-
-- [📈 View Pricing & Rate Limits](https://rapidapi.com/your-api/pricing)  
-  See available plans, quotas, and usage limits.
 
 - [💬 Contact Support](mailto:support@yourapi.com)  
-  Reach out if you have questions, issues, or need integration help.
+  If you have any questions or need help with the API, feel free to email us. We’ll get back to you as soon as possible.
 
 ---
 
