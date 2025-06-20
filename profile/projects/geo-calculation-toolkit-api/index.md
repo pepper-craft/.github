@@ -21,12 +21,13 @@ These APIs can be applied to a wide range of business and technical scenarios in
 - [Total boundary length of the polygonal area](./detail/total-boundary-length-of-the-polygonal-area.md)
 - [Total boundary length of the circular area](./detail/total-boundary-length-of-the-circular-area.md)
 
-**🟩 Area Calculation** (하)
+[//]: # (**🟩 Area Calculation** &#40;하&#41;)
 
-- [Area of a polygonal region](./detail/area-of-a-polygonal-region.md)
-- [Area of a circular region](./detail/area-of-a-circular-region.md)
+[//]: # (- [Area of a polygonal region]&#40;./detail/area-of-a-polygonal-region.md&#41;)
 
-**📍 Coordinates Calculation** (필수)
+[//]: # (- [Area of a circular region]&#40;./detail/area-of-a-circular-region.md&#41;)
+
+**📍 Coordinates Calculation**
 
 - [Closest point on a line from a coordinate](./detail/closest-point-on-a-line-from-a-coordinate.md)
 - [Perpendicular foot of a coordinate on a line](./detail/perpendicular-foot-of-a-coordinate-on-a-line.md)
@@ -43,12 +44,12 @@ These APIs can be applied to a wide range of business and technical scenarios in
 - 다중선과 원형 영역의 경계선과의 교차 좌표
 )
 
-**📦 Containment Check** (필수)
+**📦 Containment Check**
 
 - [Coordinate containment in a polygonal area](./detail/coordinate-containment-in-a-polygonal-area.md)
 - [Coordinate containment in a circular area](./detail/coordinate-containment-in-a-circular-area.md)
 
-**💥 Intersection Check** (필수)
+**💥 Intersection Check**
 
 - [Intersection between two circular areas](./detail/intersection-between-two-circular-areas.md)
 - [Intersection between two polygonal areas](./detail/intersection-between-two-polygonal-areas.md)
@@ -56,6 +57,6 @@ These APIs can be applied to a wide range of business and technical scenarios in
 - [Intersection between a polyline and a polygonal area](./detail/intersection-between-a-polyline-and-a-polygonal-area.md)
 - [Intersection between a polyline and a circular area](./detail/intersection-between-a-polyline-and-a-circular-area.md)
 
-**🧭 Bearing Calculation** (하)
+[//]: # (**🧭 Bearing Calculation** &#40;하&#41;)
 
-- [Bearing between coordinates](./detail/bearing-between-coordinates.md)
+[//]: # (- [Bearing between coordinates]&#40;./detail/bearing-between-coordinates.md&#41;)
