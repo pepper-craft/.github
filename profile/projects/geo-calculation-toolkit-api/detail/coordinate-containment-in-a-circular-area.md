@@ -106,11 +106,11 @@ Content-Type: application/json
 
 ### 3.2. Response Specifications
 
-| Field         | Type    | Nullable | Description                                                         |
-|---------------|---------|----------|---------------------------------------------------------------------|
-| `success`     | boolean | ❌ No     | Indicates whether the operation succeeded                           |
-| `data`        | object  | ❌ No     | Included only when `success` is `true`                              |
-| └ `contained` | boolean | ❌ No     | true if the coordinate is inside the circular area, otherwise false | 
+| Field         | Type    | Nullable | Description                                                             |
+|---------------|---------|----------|-------------------------------------------------------------------------|
+| `success`     | boolean | ❌ No     | Indicates whether the operation succeeded                               |
+| `data`        | object  | ❌ No     | Included only when `success` is `true`                                  |
+| └ `contained` | boolean | ❌ No     | `true` if the coordinate is inside the circular area, otherwise `false` | 
 
 ---
 
