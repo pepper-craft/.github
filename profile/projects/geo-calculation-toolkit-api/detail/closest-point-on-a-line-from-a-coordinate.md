@@ -39,7 +39,7 @@ The API returns the geographic coordinate of the closest point on the line for t
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/coordinate/closest-on-line?unit=m
+POST {{base-url}}/coordinate/closest-on-line
 Content-Type: application/json
 
 {
@@ -76,13 +76,7 @@ Content-Type: application/json
 | `X-RapidAPI-Key`  | string | ✅ Yes    | Your API key issued by RapidAPI     |
 | `X-RapidAPI-Host` | string | ✅ Yes    | The API host identifier on RapidAPI |
 
-**2.2.3. Query Parameters**
-
-| Parameter | Type   | Required   | Description                                                |
-|-----------|--------|------------|------------------------------------------------------------|
-| `unit`    | string | ❌ Optional | Distance unit (`mm`, `m`, `km`, `ft`, `mi`) - defaults `m` |
-
-**2.2.4. Request Body**
+**2.2.3. Request Body**
 
 | Field              | Type   | Required | Description                                                  |
 |--------------------|--------|----------|--------------------------------------------------------------|
@@ -110,24 +104,19 @@ Content-Type: application/json
     "coordinate": {
       "lat": 37.618385,
       "lng": 126.920339
-    },
-    "distance": 31.4989,
-    "unit": "m"
+    }
   }
-}
 ```
 
 ### 3.2. Response Specifications
 
-| Field          | Type    | Nullable | Description                                                             |
-|----------------|---------|----------|-------------------------------------------------------------------------|
-| `success`      | boolean | ❌ No     | Indicates whether the operation succeeded                               |
-| `data`         | object  | ❌ No     | Included only when `success` is `true`                                  |
-| └ `coordinate` | object  | ❌ No     | The closest point on the line segment from the input coordinate         |
-| └─ `lat`       | number  | ❌ No     | Latitude of the closest point on the line                               |
-| └─ `lng`       | number  | ❌ No     | Longitude of the closest point on the line                              |
-| └ `distance`   | number  | ❌ No     | Distance between the input coordinate and the closest point on the line |
-| └ `unit`       | string  | ❌ No     | Unit of measurement (e.g. `m`, `km`, `mi`)                              |
+| Field          | Type    | Nullable | Description                                                     |
+|----------------|---------|----------|-----------------------------------------------------------------|
+| `success`      | boolean | ❌ No     | Indicates whether the operation succeeded                       |
+| `data`         | object  | ❌ No     | Included only when `success` is `true`                          |
+| └ `coordinate` | object  | ❌ No     | The closest point on the line segment from the input coordinate |
+| └─ `lat`       | number  | ❌ No     | Latitude of the closest point on the line                       |
+| └─ `lng`       | number  | ❌ No     | Longitude of the closest point on the line                      |
 
 ---
 
