@@ -1,4 +1,4 @@
-## Total boundary length of the circular area
+## Closest point on a line from a coordinate
 
 This is an HTTP API that returns the closest point on a line segment defined by two geographic coordinates, given a specific input coordinate.
 
@@ -106,6 +106,7 @@ Content-Type: application/json
       "lng": 126.920339
     }
   }
+}
 ```
 
 ### 3.2. Response Specifications

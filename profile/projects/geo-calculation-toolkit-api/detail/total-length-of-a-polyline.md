@@ -38,7 +38,7 @@ The API calculates the total surface distance by adding up the lengths of all se
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/length/polyline?unit=mm
+POST {{base-url}}/length/polyline?unit=m
 Content-Type: application/json
 
 {

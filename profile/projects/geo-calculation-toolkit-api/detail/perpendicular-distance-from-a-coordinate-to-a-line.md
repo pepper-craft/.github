@@ -40,7 +40,7 @@ This API takes a single coordinate and a line defined by two coordinates as inpu
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/distance/from-point-to-line/perpendicular?unit=mm
+POST {{base-url}}/distance/from-point-to-line/perpendicular?unit=m
 Content-Type: application/json
 
 {

@@ -38,7 +38,7 @@ The API takes a center coordinate (latitude and longitude) and a radius value as
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/length/circle/boundary?unit=mm
+POST {{base-url}}/length/circle/boundary?unit=m
 Content-Type: application/json
 
 {

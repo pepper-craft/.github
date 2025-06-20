@@ -42,7 +42,7 @@ This API takes a single coordinate and a polyline consisting of two coordinates 
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/distance/from-point-to-line/shortest?unit=mm
+POST {{base-url}}/distance/from-point-to-line/shortest?unit=m
 Content-Type: application/json
 
 {

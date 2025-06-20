@@ -45,7 +45,7 @@ The API calculates the total surface length by summing all the segment distances
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/length/polygon/boundary?unit=mm
+POST {{base-url}}/length/polygon/boundary?unit=m
 Content-Type: application/json
 
 {

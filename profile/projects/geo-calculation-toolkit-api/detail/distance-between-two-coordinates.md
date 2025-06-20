@@ -42,7 +42,7 @@ The API below takes two such coordinates as input and returns the calculated sho
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/distance/between-coordinates?unit=mm
+POST {{base-url}}/distance/between-coordinates?unit=m
 Content-Type: application/json
 
 {
