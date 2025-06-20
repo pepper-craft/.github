@@ -1,4 +1,4 @@
-## Distance between two coordinates API
+## Distance between two coordinates
 
 This is an HTTP API that calculates the shortest distance over the Earth's surface (Great-circle distance) between two
 points specified by latitude and longitude.

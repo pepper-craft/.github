@@ -1,4 +1,4 @@
-## Shortest distance from a coordinate to a line
+## Perpendicular distance from a coordinate to a line
 
 This is an HTTP API that calculates the perpendicular surface distance from a given coordinate to a straight line extended through two geographic points.
 
