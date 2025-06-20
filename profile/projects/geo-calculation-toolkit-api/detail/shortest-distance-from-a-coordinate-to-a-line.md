@@ -27,18 +27,13 @@ two geographic points.
 
 ![shortest-distance-from-a-coordinate-to-a-line](./img/shortest-distance-from-a-coordinate-to-a-line.png)
 
-This image provides a visual explanation of how the API calculates the shortest distance from a coordinate to a single
-polyline.
-Points A and B represent specific locations defined by latitude and longitude, while polyline C is a straight line
-segment formed by exactly two geographic coordinates.
+This image provides a visual explanation of how the API calculates the shortest distance from a coordinate to a single polyline.
+Points A and B represent specific locations defined by latitude and longitude, while polyline C is a straight line segment formed by exactly two geographic coordinates.
 
-- For point A, the shortest distance to polyline C is represented by the segment from A to point D, which lies on
-  polyline C.
+- For point A, the shortest distance to polyline C is represented by the segment from A to point D, which lies on polyline C.
 - For point B, the shortest distance is the segment from B to point E, also located on polyline C.
 
-This API takes a single coordinate and a polyline consisting of two coordinates as input, and returns the shortest
-surface distance, taking the curvature of the Earth into account.
-
+This API takes a single coordinate and a polyline consisting of two coordinates as input, and returns the shortest surface distance, taking the curvature of the Earth into account.
 
 ---
 
@@ -158,12 +153,12 @@ Content-Type: application/json
 
 **4.2.2. Error Response Body**
 
-| Field           | Type    | Nullable | Description                                                                       |
-|-----------------|---------|----------|-----------------------------------------------------------------------------------|
-| `success`       | boolean | ❌ No     | Indicates whether the operation was successful. Always `false` here.              |
-| `code`          | string  | ❌ No     | Application-defined error code representing the type of failure.                  |
-| `message`       | string  | ❌ No     | General explanation of the error.                                                 |
-| `detailMessage` | string  | ❌ No     | 	Additional information providing context about the error for debugging purposes. |
+| Field           | Type    | Nullable | Description                                                                      |
+|-----------------|---------|----------|----------------------------------------------------------------------------------|
+| `success`       | boolean | ❌ No     | Indicates whether the operation was successful. Always `false` here.             |
+| `code`          | string  | ❌ No     | Application-defined error code representing the type of failure.                 |
+| `message`       | string  | ❌ No     | General explanation of the error.                                                |
+| `detailMessage` | string  | ❌ No     | Additional information providing context about the error for debugging purposes. |
 
 ### 4.3. Error Codes
 

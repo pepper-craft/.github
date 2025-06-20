@@ -142,12 +142,12 @@ Content-Type: application/json
 
 **4.2.2. Error Response Body**
 
-| Field           | Type    | Nullable | Description                                                                       |
-|-----------------|---------|----------|-----------------------------------------------------------------------------------|
-| `success`       | boolean | ❌ No     | Indicates whether the operation was successful. Always `false` here.              |
-| `code`          | string  | ❌ No     | Application-defined error code representing the type of failure.                  |
-| `message`       | string  | ❌ No     | General explanation of the error.                                                 |
-| `detailMessage` | string  | ❌ No     | 	Additional information providing context about the error for debugging purposes. |
+| Field           | Type    | Nullable | Description                                                                      |
+|-----------------|---------|----------|----------------------------------------------------------------------------------|
+| `success`       | boolean | ❌ No     | Indicates whether the operation was successful. Always `false` here.             |
+| `code`          | string  | ❌ No     | Application-defined error code representing the type of failure.                 |
+| `message`       | string  | ❌ No     | General explanation of the error.                                                |
+| `detailMessage` | string  | ❌ No     | Additional information providing context about the error for debugging purposes. |
 
 ### 4.3. Error Codes
 
