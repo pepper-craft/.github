@@ -45,7 +45,7 @@ The API calculates the total surface length by summing all the segment distances
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/length/polygon?unit=mm
+POST {{base-url}}/length/polygon/boundary?unit=mm
 Content-Type: application/json
 
 {
@@ -65,9 +65,9 @@ Content-Type: application/json
 
 **2.2.1. Base Endpoint Info**
 
-| API Provider Platform | Method | Base URL(HTTP Protocol + Host)   | Path              |
-|:---------------------:|:------:|----------------------------------|:------------------|
-|       Rapid API       |  POST  | `https://yourapi.p.rapidapi.com` | `/length/polygon` |
+| API Provider Platform | Method | Base URL(HTTP Protocol + Host)   | Path                       |
+|:---------------------:|:------:|----------------------------------|:---------------------------|
+|       Rapid API       |  POST  | `https://yourapi.p.rapidapi.com` | `/length/polygon/boundary` |
 
 **2.2.2. Request Headers**
 
