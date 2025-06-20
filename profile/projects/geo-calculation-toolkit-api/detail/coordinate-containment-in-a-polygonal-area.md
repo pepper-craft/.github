@@ -54,7 +54,7 @@ Content-Type: application/json
     { "lat": 37.618600, "lng": 126.920300 },
     { "lat": 37.618450, "lng": 126.920400 },
     { "lat": 37.618320, "lng": 126.920250 },
-    { "lat": 37.618385, "lng": 126.920021 } // If the coordinates do not form a closed polygon, the API will automatically connect the last point to the first to complete the shape.
+    { "lat": 37.618385, "lng": 126.920021 } 
   ]
 }
 ```
@@ -85,6 +85,8 @@ Content-Type: application/json
 | `polygon`    | array  | ✅ Yes    | An ordered list of geographic points forming the polygonal boundary |
 | └ `lat`      | number | ✅ Yes    | Latitude of each vertex in the polygon                              |
 | └ `lng`      | number | ✅ Yes    | Longitude of each vertex in the polygon                             |
+
+> If the polygon is not closed, the API will automatically add a final segment connecting the last point to the first.
 
 ---
 
