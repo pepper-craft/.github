@@ -1,6 +1,6 @@
 ## Total length of a polyline
 
-This is an HTTP API that calculates the perpendicular surface distance from a given coordinate to a straight line extended through two geographic points.
+This is an HTTP API that calculates the total surface distance along a polyline formed by multiple geographic coordinates.
 
 ---
 
@@ -23,15 +23,13 @@ This is an HTTP API that calculates the perpendicular surface distance from a gi
 
 ## 🧭 1. Overview
 
-![perpendicular-distance-from-a-coordinate-to-a-line](./img/perpendicular-distance-from-a-coordinate-to-a-line.png)
+![total-length-of-a-polyline](./img/total-length-of-a-polyline.png)
 
-This image provides a visual explanation of how the API calculates the perpendicular surface distance from a coordinate to a line extended through two geographic points.
-Here, point A and point B are specific geographic locations defined by latitude and longitude. The line C represents a straight line segment defined by two coordinates, which may be extended beyond its endpoints.
+This image shows how the API calculates the total distance of a polyline made up of multiple connected line segments.
+The entire polyline is labeled as A. It consists of several segments, each marked with a tag such as A-1, A-2, and A-3.
+Each segment connects two consecutive geographic coordinates and represents one part of the overall path.
 
-- For point A, the perpendicular distance is calculated to point D, which lies on the extension of the input line.
-- For point B, the perpendicular intersects the line directly at point E, which lies on the original segment.
-
-This API takes a single coordinate and a line defined by two coordinates as input, and returns the shortest perpendicular surface distance from the point to the infinite line that passes through the given two points.
+The API calculates the total surface distance by adding up the lengths of all segments that make up polyline A.
 
 ---
 
@@ -40,24 +38,16 @@ This API takes a single coordinate and a line defined by two coordinates as inpu
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/distance/from-point-to-line/perpendicular?unit=mm
+POST {{base-url}}/length/polyline?unit=mm
 Content-Type: application/json
 
 {
-  "coordinate": {
-    "lat": 37.618492,
-    "lng": 126.920078
-  },
-  "line": {
-    "fromCoordinate": {
-      "lat": 37.618515,
-      "lng": 126.920021
-    },
-    "toCoordinate": {
-      "lat": 37.618385,
-      "lng": 126.920339
-    }
-  }
+  "coordinates": [
+    { "lat": 37.618492, "lng": 126.920078 },
+    { "lat": 37.618385, "lng": 126.920339 },
+    { "lat": 37.618210, "lng": 126.920580 },
+    { "lat": 37.618050, "lng": 126.920830 }
+  ]
 }
 ```
 
@@ -65,9 +55,9 @@ Content-Type: application/json
 
 **2.2.1. Base Endpoint Info**
 
-| API Provider Platform | Method | Base URL(HTTP Protocol + Host)   | Path                                         |
-|:---------------------:|:------:|----------------------------------|:---------------------------------------------|
-|       Rapid API       |  POST  | `https://yourapi.p.rapidapi.com` | `/distance/from-point-to-line/perpendicular` |
+| API Provider Platform | Method | Base URL(HTTP Protocol + Host)   | Path               |
+|:---------------------:|:------:|----------------------------------|:-------------------|
+|       Rapid API       |  POST  | `https://yourapi.p.rapidapi.com` | `/length/polyline` |
 
 **2.2.2. Request Headers**
 
@@ -85,18 +75,11 @@ Content-Type: application/json
 
 **2.2.4. Request Body**
 
-| Field              | Type   | Required | Description                                                                 |
-|--------------------|--------|----------|-----------------------------------------------------------------------------|
-| `coordinate`       | object | ✅ Yes    | The point from which the perpendicular shortest distance will be calculated |
-| └ `lat`            | number | ✅ Yes    | Latitude of the input point                                                 |
-| └ `lng`            | number | ✅ Yes    | Longitude of the input point                                                |
-| `line`             | object | ✅ Yes    | The line segment defined by two coordinates                                 |
-| └ `fromCoordinate` | object | ✅ Yes    | Starting point of the line                                                  |
-| └─ `lat`           | number | ✅ Yes    | Latitude of the starting point                                              |
-| └─ `lng`           | number | ✅ Yes    | Longitude of the starting point                                             |
-| └ `toCoordinate`   | object | ✅ Yes    | Ending point of the line                                                    |
-| └─ `lat`           | number | ✅ Yes    | Latitude of the ending point                                                |
-| └─ `lng`           | number | ✅ Yes    | Longitude of the ending point                                               |
+| Field         | Type   | Required | Description                                               |
+|---------------|--------|----------|-----------------------------------------------------------|
+| `coordinates` | array  | ✅ Yes    | An ordered list of geographic points forming the polyline |
+| └ `lat`       | number | ✅ Yes    | Latitude of the coordinate                                |
+| └ `lng`       | number | ✅ Yes    | Longitude of the coordinate                               |
 
 ---
 
@@ -108,7 +91,7 @@ Content-Type: application/json
 {
   "success": true,
   "data": {
-    "distance": 31.4989,
+    "length": 142.9837,
     "unit": "m"
   }
 }
@@ -116,12 +99,12 @@ Content-Type: application/json
 
 ### 3.2. Response Specifications
 
-| Field       | Type    | Nullable | Description                                                                                         |
-|-------------|---------|----------|-----------------------------------------------------------------------------------------------------|
-| `success`   | boolean | ❌ No     | Indicates whether the operation succeeded                                                           |
-| `data`      | object  | ❌ No     | Included only when `success` is `true`                                                              |
-| └`distance` | number  | ❌ No     | Shortest perpendicular surface distance from the input coordinate to the line (4 decimal precision) |
-| └`unit`     | string  | ❌ No     | Unit of measurement (e.g. `m`, `km`, `mi`)                                                          |
+| Field      | Type    | Nullable | Description                                                |
+|------------|---------|----------|------------------------------------------------------------|
+| `success`  | boolean | ❌ No     | Indicates whether the operation succeeded                  |
+| `data`     | object  | ❌ No     | Included only when `success` is `true`                     |
+| └ `length` | number  | ❌ No     | Total surface length of the polyline (4 decimal precision) |
+| └ `unit`   | string  | ❌ No     | Unit of measurement (e.g. `m`, `km`, `mi`)                 |
 
 ---
 

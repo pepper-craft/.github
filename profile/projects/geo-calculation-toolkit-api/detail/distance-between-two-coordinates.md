@@ -31,6 +31,7 @@ This image is a visual representation of the distance between two geographic coo
 Points A and B are defined by their latitude and longitude, forming geographic coordinates.
 While the image illustrates the distance as a straight line on a flat surface for simplicity,
 it actually represents the shortest path over the Earth’s surface, known as the Great-circle distance.
+
 The API below takes two such coordinates as input and returns the calculated shortest distance on Earth.
 
 
