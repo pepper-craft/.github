@@ -41,7 +41,7 @@ The API returns the resulting coordinate calculated using the given bearing and 
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/coordinate/move-in-bearing
+POST {{BASE-URL}}/coordinate/move-in-bearing
 Content-Type: application/json
 
 {
@@ -59,9 +59,9 @@ Content-Type: application/json
 
 **2.2.1. Base Endpoint Info**
 
-| API Provider Platform | Method | Base URL(HTTP Protocol + Host)   | Path                             |
-|:---------------------:|:------:|----------------------------------|:---------------------------------|
-|       Rapid API       |  POST  | `https://yourapi.p.rapidapi.com` | `/coordinate/perpendicular-foot` |
+| API Provider Platform | Method | BASE-URL(HTTP Protocol + Host)                       | Path                             |
+|:---------------------:|:------:|------------------------------------------------------|:---------------------------------|
+|       Rapid API       |  POST  | `https://geo-calculation-toolkit-api.p.rapidapi.com` | `/coordinate/perpendicular-foot` |
 
 **2.2.2. Request Headers**
 

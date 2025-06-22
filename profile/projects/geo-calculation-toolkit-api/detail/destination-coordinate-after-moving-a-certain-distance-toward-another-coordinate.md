@@ -41,7 +41,7 @@ The API returns the geographic coordinate reached by moving a specified distance
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/coordinate/move-toward-coordinate
+POST {{BASE-URL}}/coordinate/move-toward-coordinate
 Content-Type: application/json
 
 {
@@ -62,9 +62,9 @@ Content-Type: application/json
 
 **2.2.1. Base Endpoint Info**
 
-| API Provider Platform | Method | Base URL(HTTP Protocol + Host)   | Path                             |
-|:---------------------:|:------:|----------------------------------|:---------------------------------|
-|       Rapid API       |  POST  | `https://yourapi.p.rapidapi.com` | `/coordinate/perpendicular-foot` |
+| API Provider Platform | Method | BASE-URL(HTTP Protocol + Host)                       | Path                             |
+|:---------------------:|:------:|------------------------------------------------------|:---------------------------------|
+|       Rapid API       |  POST  | `https://geo-calculation-toolkit-api.p.rapidapi.com` | `/coordinate/perpendicular-foot` |
 
 **2.2.2. Request Headers**
 
@@ -76,16 +76,16 @@ Content-Type: application/json
 
 **2.2.3. Request Body**
 
-| Field            | Type   | Required   | Description                                                         |
-|------------------|--------|------------|---------------------------------------------------------------------|
-| `fromCoordinate` | object | ✅ Yes      | Starting point from which the movement begins                       |
-| └ `lat`          | number | ✅ Yes      | Latitude of the starting coordinate                                 |
-| └ `lng`          | number | ✅ Yes      | Longitude of the starting coordinate                                |
-| `toCoordinate`   | object | ✅ Yes      | Target direction coordinate                                         |
-| └ `lat`          | number | ✅ Yes      | Latitude of the target coordinate                                   |
-| └ `lng`          | number | ✅ Yes      | Longitude of the target coordinate                                  |
-| `distance`       | number | ✅ Yes      | Distance to move toward the target                                  |
-| `distanceUnit`   | string | ❌ Optional | Unit of the input distance (e.g. `mm`, `m`, `km`, `ft`, `yd`, `mi`). Defaults to `m`. |
+| Field            | Type   | Required   | Description                                                                      |
+|------------------|--------|------------|----------------------------------------------------------------------------------|
+| `fromCoordinate` | object | ✅ Yes      | Starting point from which the movement begins                                    |
+| └ `lat`          | number | ✅ Yes      | Latitude of the starting coordinate                                              |
+| └ `lng`          | number | ✅ Yes      | Longitude of the starting coordinate                                             |
+| `toCoordinate`   | object | ✅ Yes      | Target direction coordinate                                                      |
+| └ `lat`          | number | ✅ Yes      | Latitude of the target coordinate                                                |
+| └ `lng`          | number | ✅ Yes      | Longitude of the target coordinate                                               |
+| `distance`       | number | ✅ Yes      | Distance to move toward the target                                               |
+| `distanceUnit`   | string | ❌ Optional | Unit of the input distance (`mm`, `m`, `km`, `ft`, `yd`, `mi`). Defaults to `m`. |
 
 ---
 

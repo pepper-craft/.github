@@ -39,7 +39,7 @@ The API returns the geographic coordinate of the closest point on the line for t
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/coordinate/closest-on-line
+POST {{BASE-URL}}/coordinate/closest-on-line
 Content-Type: application/json
 
 {
@@ -64,9 +64,9 @@ Content-Type: application/json
 
 **2.2.1. Base Endpoint Info**
 
-| API Provider Platform | Method | Base URL(HTTP Protocol + Host)   | Path                          |
-|:---------------------:|:------:|----------------------------------|:------------------------------|
-|       Rapid API       |  POST  | `https://yourapi.p.rapidapi.com` | `/coordinate/closest-on-line` |
+| API Provider Platform | Method | BASE-URL(HTTP Protocol + Host)                       | Path                          |
+|:---------------------:|:------:|------------------------------------------------------|:------------------------------|
+|       Rapid API       |  POST  | `https://geo-calculation-toolkit-api.p.rapidapi.com` | `/coordinate/closest-on-line` |
 
 **2.2.2. Request Headers**
 

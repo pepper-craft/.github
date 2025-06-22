@@ -40,7 +40,7 @@ The API returns the geographic coordinate of the perpendicular foot from the giv
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/coordinate/perpendicular-foot
+POST {{BASE-URL}}/coordinate/perpendicular-foot
 Content-Type: application/json
 
 {
@@ -65,9 +65,9 @@ Content-Type: application/json
 
 **2.2.1. Base Endpoint Info**
 
-| API Provider Platform | Method | Base URL(HTTP Protocol + Host)   | Path                             |
-|:---------------------:|:------:|----------------------------------|:---------------------------------|
-|       Rapid API       |  POST  | `https://yourapi.p.rapidapi.com` | `/coordinate/perpendicular-foot` |
+| API Provider Platform | Method | BASE-URL(HTTP Protocol + Host)                       | Path                             |
+|:---------------------:|:------:|------------------------------------------------------|:---------------------------------|
+|       Rapid API       |  POST  | `https://geo-calculation-toolkit-api.p.rapidapi.com` | `/coordinate/perpendicular-foot` |
 
 **2.2.2. Request Headers**
 

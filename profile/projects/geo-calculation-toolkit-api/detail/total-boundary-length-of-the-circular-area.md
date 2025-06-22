@@ -38,7 +38,7 @@ The API takes a center coordinate (latitude and longitude) and a radius value as
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/length/circle/boundary?unit=m
+POST {{BASE-URL}}/length/circle/boundary?unit=m
 Content-Type: application/json
 
 {
@@ -55,9 +55,9 @@ Content-Type: application/json
 
 **2.2.1. Base Endpoint Info**
 
-| API Provider Platform | Method | Base URL(HTTP Protocol + Host)   | Path                      |
-|:---------------------:|:------:|----------------------------------|:--------------------------|
-|       Rapid API       |  POST  | `https://yourapi.p.rapidapi.com` | `/length/circle/boundary` |
+| API Provider Platform | Method | BASE-URL(HTTP Protocol + Host)                       | Path                      |
+|:---------------------:|:------:|------------------------------------------------------|:--------------------------|
+|       Rapid API       |  POST  | `https://geo-calculation-toolkit-api.p.rapidapi.com` | `/length/circle/boundary` |
 
 **2.2.2. Request Headers**
 

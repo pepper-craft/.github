@@ -58,9 +58,9 @@ Content-Type: application/json
 
 **2.2.1. Base Endpoint Info**
 
-| API Provider Platform | Method | Base-URL(HTTP Protocol + Host)   | Path                            |
-|:---------------------:|:------:|----------------------------------|:--------------------------------|
-|       Rapid API       |  POST  | `https://yourapi.p.rapidapi.com` | `/distance/between-coordinates` |
+| API Provider Platform | Method | BASE-URL(HTTP Protocol + Host)                       | Path                            |
+|:---------------------:|:------:|------------------------------------------------------|:--------------------------------|
+|       Rapid API       |  POST  | `https://geo-calculation-toolkit-api.p.rapidapi.com` | `/distance/between-coordinates` |
 
 **2.2.2. Request Headers**
 

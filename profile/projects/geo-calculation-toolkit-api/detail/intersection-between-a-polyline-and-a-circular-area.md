@@ -40,7 +40,7 @@ The API returns a boolean value indicating whether the polyline intersects the c
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/intersection/polyline-circle
+POST {{BASE-URL}}/intersection/polyline-circle
 Content-Type: application/json
 
 {

@@ -38,7 +38,7 @@ The API calculates the total surface distance by adding up the lengths of all se
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/length/polyline?unit=m
+POST {{BASE-URL}}/length/polyline?unit=m
 Content-Type: application/json
 
 {
@@ -55,9 +55,9 @@ Content-Type: application/json
 
 **2.2.1. Base Endpoint Info**
 
-| API Provider Platform | Method | Base URL(HTTP Protocol + Host)   | Path               |
-|:---------------------:|:------:|----------------------------------|:-------------------|
-|       Rapid API       |  POST  | `https://yourapi.p.rapidapi.com` | `/length/polyline` |
+| API Provider Platform | Method | BASE-URL(HTTP Protocol + Host)                       | Path               |
+|:---------------------:|:------:|------------------------------------------------------|:-------------------|
+|       Rapid API       |  POST  | `https://geo-calculation-toolkit-api.p.rapidapi.com` | `/length/polyline` |
 
 **2.2.2. Request Headers**
 

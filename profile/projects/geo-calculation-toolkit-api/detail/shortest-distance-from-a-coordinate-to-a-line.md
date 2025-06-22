@@ -42,7 +42,7 @@ This API takes a single coordinate and a polyline consisting of two coordinates 
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/distance/from-point-to-line/shortest?unit=m
+POST {{BASE-URL}}/distance/from-point-to-line/shortest?unit=m
 Content-Type: application/json
 
 {
@@ -67,9 +67,9 @@ Content-Type: application/json
 
 **2.2.1. Base Endpoint Info**
 
-| API Provider Platform | Method | Base URL(HTTP Protocol + Host)   | Path                                    |
-|:---------------------:|:------:|----------------------------------|:----------------------------------------|
-|       Rapid API       |  POST  | `https://yourapi.p.rapidapi.com` | `/distance/from-point-to-line/shortest` |
+| API Provider Platform | Method | BASE-URL(HTTP Protocol + Host)                       | Path                                    |
+|:---------------------:|:------:|------------------------------------------------------|:----------------------------------------|
+|       Rapid API       |  POST  | `https://geo-calculation-toolkit-api.p.rapidapi.com` | `/distance/from-point-to-line/shortest` |
 
 **2.2.2. Request Headers**
 

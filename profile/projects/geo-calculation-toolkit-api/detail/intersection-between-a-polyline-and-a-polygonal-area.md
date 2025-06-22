@@ -40,7 +40,7 @@ The API returns a boolean value indicating whether the polyline and the polygon 
 ### 2.1. Request Example
 
 ```http request
-POST {{base-url}}/intersection/polyline-polygon
+POST {{BASE-URL}}/intersection/polyline-polygon
 Content-Type: application/json
 
 {
