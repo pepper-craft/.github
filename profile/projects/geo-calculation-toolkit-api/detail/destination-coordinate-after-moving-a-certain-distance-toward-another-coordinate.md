@@ -85,7 +85,7 @@ Content-Type: application/json
 | └ `lat`          | number | ✅ Yes      | Latitude of the target coordinate                                   |
 | └ `lng`          | number | ✅ Yes      | Longitude of the target coordinate                                  |
 | `distance`       | number | ✅ Yes      | Distance to move toward the target                                  |
-| `distanceUnit`   | string | ❌ Optional | Unit of the input distance (e.g. `m`, `km`, `mi`). Defaults to `m`. |
+| `distanceUnit`   | string | ❌ Optional | Unit of the input distance (e.g. `mm`, `m`, `km`, `ft`, `yd`, `mi`). Defaults to `m`. |
 
 ---
 

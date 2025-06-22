@@ -69,9 +69,9 @@ Content-Type: application/json
 
 **2.2.3. Query Parameters**
 
-| Parameter | Type   | Required   | Description                                                |
-|-----------|--------|------------|------------------------------------------------------------|
-| `unit`    | string | ❌ Optional | Distance unit (`mm`, `m`, `km`, `ft`, `mi`) - defaults `m` |
+| Parameter | Type   | Required   | Description                                                      |
+|-----------|--------|------------|------------------------------------------------------------------|
+| `unit`    | string | ❌ Optional | Distance unit (`mm`, `m`, `km`, `ft`, `yd`, `mi`) - defaults `m` |
 
 **2.2.4. Request Body**
 
@@ -106,7 +106,7 @@ Content-Type: application/json
 | `success`  | boolean | ❌ No     | Indicates whether the operation succeeded                            |
 | `data`     | object  | ❌ No     | Included only when `success` is `true`                               |
 | └ `length` | number  | ❌ No     | Total surface length of the polygonal boundary (4 decimal precision) |
-| └ `unit`   | string  | ❌ No     | Unit of measurement (e.g. `m`, `km`, `mi`)                           |
+| └ `unit`   | string  | ❌ No     | Unit of measurement (`mm`, `m`, `km`, `ft`, `yd`, `mi`)              |
 
 ---
 
