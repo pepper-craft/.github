@@ -10,14 +10,7 @@ Browse our APIs and bring your ideas to life, faster. 🚀
 
 ### Projects
 
-🔹 **Geo Calc Toolkit API**  
-Precise geospatial calculation APIs for distance, length, and area — built on top of the S2 Geometry Library.  
-→ [View documentation](https://github.com/pepper-craft/geo-calc-toolkit)
-
-- 🌍 WGS84-based spherical geometry
-- 📏 Distance between points and lines
-- 📐 Polygon and circle area calculations
-- 📎 Ready for use in LBS, logistics, and mapping apps
+⏳ Coming soon...
 
 ---
 
