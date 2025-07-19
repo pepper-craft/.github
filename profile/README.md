@@ -18,4 +18,4 @@ The Geo Calculation Toolkit API is a lightweight and flexible service that provi
 - **[View API Documentation](https://github.com/pepper-craft/geo-calculation-toolkit-api-docs)**
 - **[View Changelog](https://github.com/pepper-craft/geo-calculation-toolkit-api-docs/releases)**
 - **API Provider Platform:**
-    - [RapidAPI Console](https://rapidapi.com/peppercraft40/api/geo-calculation-toolkit-api)
+    - [RapidAPI Console](https://rapidapi.com/pepper-craft1-pepper-craft-default/api/geo-calculation-toolkit-api)
