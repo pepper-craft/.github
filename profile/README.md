@@ -12,11 +12,10 @@ Browse our APIs and bring your ideas to life, faster. 🚀
 
 #### 🌐 Geo Calculation Toolkit API
 
-> The Geo Calculation Toolkit API is a lightweight and flexible service that provides essential geospatial computation features — such as distance, polyline length, and area calculations — to support mapping, location analytics, and geographic data processing.
+The Geo Calculation Toolkit API is a lightweight and flexible service that provides essential geospatial computation features — such as distance, polyline length, and area calculations — to support mapping, location analytics, and geographic data processing.
 
-- **Current Version:** `v1.0.3`
-- **Last Deployed:** `2025-07-15`
+- **Current Version :** `v1.0.0` / **Last Deployed :** `2025-07-19`
 - **[View API Documentation](https://github.com/pepper-craft/geo-calculation-toolkit-api-docs)**
-- **[View Changelog](https://github.com/pepper-craft/geo-calculation-toolkit-api/releases)**
+- **[View Changelog](https://github.com/pepper-craft/geo-calculation-toolkit-api-docs/releases)**
 - **API Provider Platform:**
-    - [RapidAPI](https://rapidapi.com/peppercraft40/api/geo-calculation-toolkit-api)
+    - [RapidAPI Console](https://rapidapi.com/peppercraft40/api/geo-calculation-toolkit-api)
